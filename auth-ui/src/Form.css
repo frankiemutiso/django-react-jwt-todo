@@ -1,0 +1,25 @@
+.form {
+  display: flex;
+  margin: 10px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.form > form > input {
+  padding: 12px;
+  outline: none;
+  border: none;
+  width: 390px;
+  font-family: inherit;
+}
+
+.form__btn {
+  padding: 12px;
+  outline: none;
+  border: none;
+  font-family: inherit;
+  background-color: #00af91;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}

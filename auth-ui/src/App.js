@@ -150,9 +150,8 @@ class App extends Component {
           });
         })
         .catch((error) => console.log("Error: ", error));
-    } 
+    }
     // if not editing post a new todo
-    
     else {
       fetch("http://127.0.0.1:8000/api/todos/", {
         method: "POST",
@@ -186,7 +185,6 @@ class App extends Component {
 
   handleEdit = (todo) => {
     this.setState({
-      
       editing: true,
       activeItem: todo
     });

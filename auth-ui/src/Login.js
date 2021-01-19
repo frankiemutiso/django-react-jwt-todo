@@ -21,6 +21,9 @@ class Login extends Component {
   };
 
   render() {
+    const enabled =
+      this.state.username.length > 0 && this.state.password.length > 8;
+
     return (
       <div className="login">
         <form action="" onSubmit={(e) => this.props.handleLogin(e, this.state)}>
@@ -44,7 +47,7 @@ class Login extends Component {
             />
           </div>
           <div className="login-btn">
-            <input type="submit" value="Login" />
+            <input type="submit" value="Login" disabled={!enabled} />
           </div>
         </form>
       </div>

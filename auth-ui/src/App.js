@@ -28,6 +28,7 @@ class App extends Component {
   handleLogin = (e, credentials) => {
     e.preventDefault();
 
+
     fetch("http://127.0.0.1:8000/api/token/", {
       method: "POST",
       headers: {
@@ -50,12 +51,19 @@ class App extends Component {
         }
       })
       .catch((error) => console.log(error));
+
+    setTimeout(() => {
+      this.setState({ error: "" });
+    }, 10000);
   };
 
   // Signup Logic
 
   handleSignup = (e, credentials) => {
     e.preventDefault();
+
+    if (!credentials) return;
+
     fetch("http://127.0.0.1:8000/api/register/", {
       method: "POST",
       headers: {
@@ -82,6 +90,10 @@ class App extends Component {
         }
       })
       .catch((error) => console.log(error.detail));
+
+    setTimeout(() => {
+      this.setState({ error: "" });
+    }, 10000);
   };
 
   handleLogout = (e) => {

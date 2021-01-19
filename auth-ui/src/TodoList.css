@@ -14,6 +14,7 @@
   padding: 12px;
   border-left: 10px solid #f88f01;
   border-radius: 2px;
+  transition: ease-in-out 100ms;
 }
 
 .todoList__container:hover {
@@ -52,6 +53,10 @@
   cursor: pointer;
 }
 
+.todoList__edit:hover {
+  background-color: #121013;
+}
+
 .todoList__delete {
   outline: none;
   border: none;
@@ -60,4 +65,8 @@
   padding: 8px 10px;
   font-family: inherit;
   cursor: pointer;
+}
+
+.todoList__delete:hover {
+  background: #ec4646;
 }

@@ -23,3 +23,7 @@
   font-weight: 600;
   cursor: pointer;
 }
+
+.form__btn:hover {
+  background-color: #007965;
+}

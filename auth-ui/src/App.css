@@ -57,9 +57,10 @@
 }
 
 .app__error {
-  background: #ff577f;
-  border: 1px solid #ff4646;
+  background: #ff6464;
+  border: 1px solid #cd0410;
   padding: 8px 10px;
-  border-radius: 2px;
+  border-radius: 1px;
   margin-top: 20px;
+  transition: ease-in-out 100ms;
 }
